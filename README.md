@@ -1,1 +1,2 @@
-Nooooo clue what I'm supposed to write here to be quite honest but the structure section mentioned that I should include this so.
+~~Nooooo clue what I'm supposed to write here to be quite honest but the structure section mentioned that I should include this so.~~
+OH! This is what shows up on the GitHub repo description page ok cool! 
