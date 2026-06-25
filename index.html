@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amira's Portfolio</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="sticky-top">
+    <div class="marquee py-2 fs-5 overflow-hidden border-bottom"><span>*** WELCOME TO MIRA'S HOMEPAGE *** YOU ARE OUR
+        FIRST AND LAST VISITOR ***</span></div>
+    <!-- one of the onepage portfolios I'm taking inspiration from had a minimal/creative toggle to change the page's layout. For now, this only adds a couple easter egg hidden elements but in the future I want to expand on it -->
+    <div class="retro-badge gap-2 fw-bold"><span>[+]</span>UNDER CONSTRUCTION</div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark topnav border-bottom">
+      <div class="container-fluid px-3 px-md-4">
+        <a class="navbar-brand brand fw-bolder" href="#top"><span
+            class="me-1 fst-italic fw-normal">my</span>Portfolio</a>
+        <button class="navbar-toggler ms-auto rounded-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNav">
+          <div class="navbar-nav mx-lg-auto gap-lg-2 py-3 py-lg-0 fs-5 text-center text-uppercase">
+            <a class="nav-link px-3 py-2" href="#about">About</a>
+            <a class="nav-link px-3 py-2" href="#work">Work</a>
+            <a class="nav-link px-3 py-2" href="#contact">Contact</a>
+          </div>
+          <div class="mode d-inline-grid align-items-center gap-2 py-3 py-lg-0 text-uppercase fs-6">
+            <span>Minimal</span>
+            <div class="form-check form-switch d-grid m-0 ps-0 py-1">
+              <input class="form-check-input m-0 border-0 rounded-0 float-none" type="checkbox" id="creativeMode">
+            </div>
+            <label class="m-0" for="creativeMode">Creative</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="top" class="hero d-flex align-items-end overflow-hidden">
+      <div class="container-fluid px-3 px-md-4 section-grid d-grid align-items-start">
+        <div class="main-column reveal">
+          <p class="eyebrow mb-2 lh-sm small text-uppercase">(Future) Frontend Developer <br>
+            2026 - open to work
+          </p>
+          <h1 class="display-1 m-0 lh-1 text-uppercase fw-bold">Amira Sherif.</h1>
+          <p class="intro mt-3">
+            Fullstack Web Development student at CodeFactory who loves building & designing aesthetically pleasing,
+            simple pages.
+          </p>
+          <button class="btn btn-light mt-3 rounded-0 text-uppercase fs-5" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#bio" aria-controls="bio">My Bio</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about overflow-hidden" id="about">
+      <div class="container-fluid px-3 px-md-4">
+        <div class="about-grid d-grid align-items-start mx-auto">
+          <aside class="about-aside reveal">
+            <p class="eyebrow mb-3 text-uppercase fw-bold fs-6">Hats I've worn...</p>
+            <ol class="roles d-grid mt-3 mb-0 ps-0 list-unstyled border-top">
+              <li class="d-grid py-3 border-bottom">
+                <span class="fs-6 fw-bold lh-1">01</span>
+                <strong class="lh-sm">Fullstack Web Development Student</strong>
+                <small>Frontend course almost completed</small>
+              </li>
+              <li class="d-grid py-3 border-bottom">
+                <span class="fs-6 fw-bold lh-1">02</span>
+                <strong class="lh-sm">QA Specialist</strong>
+                <small>Troubleshooting carry over to webdev</small>
+              </li>
+              <li class="d-grid py-3 border-bottom">
+                <span class="fs-6 fw-bold lh-1">03</span>
+                <strong class="lh-sm">Freelance Digital Artist</strong>
+                <small>Informs my design decisions</small>
+              </li>
+            </ol>
+          </aside>
+
+          <div class="about-main reveal">
+            <p class="eyebrow mb-2 text-uppercase fw-bold fs-6">My philosophy...</p>
+            <h2 class="display-6 m-0 lh-sm text-uppercase fw-bold">Research → Polish → Repeat</h2>
+            <p class="mt-4">
+              I like to keep it simple: get something on the page first, then work my way up. Streamlining each project
+              & wringing out the maximum amount of efficiency from every line is my top priority. Animation work —
+              namely GSAP — is a new passion of mine that I hope to keep growing.
+            </p>
+            <p class="eyebrow small text-uppercase fw-bold mt-4 mb-0">Tech skills...</p>
+            <ul class="dot-list d-flex flex-wrap m-0 p-0 mt-1 list-unstyled fs-6 fw-bold">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Angular</li>
+              <li>GSAP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work border-top overflow-hidden" id="work">
+      <div class="container-fluid px-3 px-md-4">
+        <article class="project reveal">
+          <div class="section-grid d-grid align-items-start">
+            <div>
+              <h2 class="fs-5 work-title d-inline-flex align-items-center gap-2 mb-0 text-uppercase">Projects</h2>
+              <p class="mt-1 mb-0 fs-6 lh-sm text-uppercase fw-normal">Course work, 2026</p>
+            </div>
+
+            <div class="preview">
+              <div class="d-flex justify-content-center" data-preview="booktrackr">
+                <div class="frame size-desktop overflow-hidden">
+                  <div class="bar d-flex align-items-center gap-2 px-3 border-bottom" aria-hidden="true">
+                    <span class="rounded-circle bg-light opacity-50"></span>
+                    <span class="rounded-circle bg-light opacity-50"></span>
+                    <span class="rounded-circle bg-light opacity-50"></span>
+                  </div>
+                  <iframe class="d-block w-100 border-0" src="./previews/booktrackr/index.html"
+                    title="BookTrackr live preview" loading="lazy"></iframe>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mt-2">
+                <div class="btn-group btn-group-sm">
+                  <button class="btn btn-outline-dark active rounded-0" type="button" data-project="booktrackr"
+                    data-size="desktop">Desktop</button>
+                  <button class="btn btn-outline-dark rounded-0" type="button" data-project="booktrackr"
+                    data-size="tablet">Tablet</button>
+                  <button class="btn btn-outline-dark rounded-0" type="button" data-project="booktrackr"
+                    data-size="mobile">Mobile</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-info">
+              <p class="eyebrow mt-1 mb-0 fs-6 lh-sm text-uppercase fw-normal">Project #01</p>
+              <h3 class="fs-1 mb-3 lh-1">BookTrackr</h3>
+              <p class="lh-sm">
+                A responsive bookshelf for tracking a reading list, rating its titles from 0 to 10, sorting them by
+                rating, and
+                searching the page. Logo showcases simple GSAP animation logic.
+              </p>
+              <p class="eyebrow mt-5 mb-1 fs-6 text-uppercase fw-bold">Tech Highlights</p>
+              <ul class="dot-list d-flex flex-wrap m-0 p-0 mb-2 list-unstyled small fw-bold">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>GSAP</li>
+              </ul>
+
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-dark rounded-0" href="./previews/booktrackr/index.html" target="_blank"
+                  rel="noreferrer">Live Website</a>
+                <a class="btn btn-outline-dark rounded-0" href="https://github.com/Havokitten/FE2605-EXAM-2-AmiraSherif.git"
+                  target="_blank" rel="noreferrer">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-offset reveal">
+          <div class="section-grid d-grid align-items-start">
+            <div class="preview">
+              <div class="d-flex justify-content-center" data-preview="wanderlust">
+                <div class="frame size-desktop overflow-hidden">
+                  <div class="bar d-flex align-items-center gap-2 px-3 border-bottom" aria-hidden="true">
+                    <span class="rounded-circle bg-light opacity-50"></span>
+                    <span class="rounded-circle bg-light opacity-50"></span>
+                    <span class="rounded-circle bg-light opacity-50"></span>
+                  </div>
+                  <iframe class="d-block w-100 border-0" src="./previews/wanderlust/index.html"
+                    title="Wanderlust live preview" loading="lazy"></iframe>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mt-2">
+                <div class="btn-group btn-group-sm">
+                  <button class="btn btn-outline-dark active rounded-0" type="button" data-project="wanderlust"
+                    data-size="desktop">Desktop</button>
+                  <button class="btn btn-outline-dark rounded-0" type="button" data-project="wanderlust"
+                    data-size="tablet">Tablet</button>
+                  <button class="btn btn-outline-dark rounded-0" type="button" data-project="wanderlust"
+                    data-size="mobile">Mobile</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-info">
+              <p class="eyebrow mt-1 mb-0 fs-6 lh-sm text-uppercase fw-normal">Project #02</p>
+              <h3 class="fs-1 mb-3 lh-1">Wanderlust</h3>
+              <p class="lh-sm">
+                A traveling agency website built using Angular. Includes a working booking interface, responsive image
+                carousel and polished destination cards with selective interactibility.
+              </p>
+              <p class="eyebrow mt-5 mb-1 fs-6 text-uppercase fw-bold">Tech Highlights</p>
+              <ul class="dot-list d-flex flex-wrap m-0 p-0 mb-2 list-unstyled small fw-bold">
+                <li>Angular</li>
+                <li>TypeScript</li>
+                <li>Bootstrap</li>
+                <li>Routing</li>
+              </ul>
+
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-dark rounded-0" href="./previews/wanderlust/index.html" target="_blank"
+                  rel="noreferrer">Live Website</a>
+                <a class="btn btn-outline-dark rounded-0"
+                  href="https://github.com/Havokitten/FE2605-EXAM-3-AmiraSherif.git" target="_blank"
+                  rel="noreferrer">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact border-top overflow-hidden" id="contact">
+      <div class="container-fluid px-3 px-md-4 section-grid d-grid align-items-start">
+        <div class="main-column reveal">
+          <p class="eyebrow mb-2 text-uppercase fw-bold">Contact</p>
+          <h2 class="display-4 m-0 lh-1 text-uppercase">Open to inquiries, feedback or future work.</h2>
+        </div>
+        <div class="side-column reveal">
+          <div class="links d-grid gap-1">
+            <a class="d-inline-flex align-items-baseline gap-2 py-1 fw-bold fs-5"
+              href="mailto:havokitten@gmail.com">Email <span class="d-inline-block"
+                aria-hidden="true">&nearr;</span></a>
+            <a class="d-inline-flex align-items-baseline gap-2 py-1 fw-bold fs-5" href="https://github.com/Havokitten"
+              target="_blank" rel="noreferrer">GitHub <span class="d-inline-block" aria-hidden="true">&nearr;</span></a>
+            <a class="d-inline-flex align-items-baseline gap-2 py-1 fw-bold fs-5"
+              href="https://www.linkedin.com/in/amira-sherif-127648129/" target="_blank" rel="noreferrer">LinkedIn <span
+                class="d-inline-block" aria-hidden="true">&nearr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer border-top py-3 small fw-bold">
+    <div class="container-fluid px-3 px-md-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+        <p class="mb-0">&copy; 2026 Amira Sherif</p>
+        <a class="to-top text-uppercase" href="#top">Back to top <span class="d-inline-block"
+            aria-hidden="true">&uarr;</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="offcanvas offcanvas-end bio-panel" tabindex="-1" id="bio" aria-labelledby="bioTitle">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title text-uppercase fw-bold" id="bioTitle">About Me</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <img class="portrait d-block mx-auto w-75 mb-0 object-fit-cover border" src="./images/bio-portrait.png"
+        alt="Illustrated doodle of Amira (that's me!)">
+      <p class="eyebrow small text-center">Art credit: Anisa Sherzai</p>
+      <p class="fs-6 lh-sm">
+        Hi! I'm Amira, but I prefer Mira — it's what I'm credited as for my gamedev work. <br><br>The rest of my
+        portfolio might tell you about my work, but I wanted to also tell you a bit about myself because I believe these
+        details inform the decisions I make overall. <br><br> I moved to Vienna in 2013, but I'm originally from Libya.
+        I'm a self-taught artist and hopeful future web dev! I have two cats and my hobbies/interests include...
+      </p> <!-- yes I know linebreaks are poorform at this point but I got lazy -->
+      <ul class="dot-list d-flex flex-wrap m-0 p-0 list-unstyled small fw-bold text-center">
+        <li>Video Games</li>
+        <li>Music Production</li>
+        <li>Digital Art</li>
+        <li>Drumming</li>
+        <li>Tennis</li>
+        <li>Gardening</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

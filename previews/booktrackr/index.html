@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BookTrackr</title> <!-- dropped the e in Tracker because it's more #Trendy #Hip #EnVogue -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark sticky-top navbar-dark" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">📚Book<span class="text-success">Trackr</span></a>
+                <!-- note to self: check if aria labels are necessary for mobile since the toggler should only show up then -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"> <!-- the answer is apparently yes -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ms-auto me-3">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reading List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" id="searchForm">
+                        <input class="form-control me-2" type="search" placeholder="Search page..." aria-label="Search" id="searchInput" />
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section py-5 text-center bg-light text-light">
+        <div class="container p-4"> <!-- reminder to self: wrapper = one item, container = multiple but bootstrap uses container for everything so just stick with that -->
+            <div class="row row-cols-1 justify-content-center"> <!-- apparently putting layout items in grids is generally good practice for responsiveness? idk! all the documentation i've read on hero sections laid things out like this. it's short enough in this case that it wont need much... responsiveness to begin with tbh but for consistency's sake... -->
+                <div class="col">
+                    <h1 class="display-4 fw-bold">Welcome to Book<span class="brand">Trackr</span></h1>
+                    <p class="lead">Rate the books you've read and keep track of your reading list.</p>
+                    <a href="#bookshelf" class="btn btn-success btn-lg mt-3">Explore Bookshelf</a> <!--the top of the page is so short this technically barely does anything... it's the thought that counts! -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-5"> <!--idk if it's poor ettiquette to add styling to <main> but it's the quickest way i could add padding -->
+        <div class="container p-4 shadow rounded-3" id="bookshelf">
+            <div class="d-flex flex-column align-items-center gap-2 mb-1">
+                    <button class="btn btn-success btn-lg fw-bold" id="sortBooks">Sort by Rating</button>
+                    <select class="form-select w-auto mx-auto" id="sortType"> <!-- i know bootstrap has dropdowns but oh my god they are such a hassle to figure out when it comes to handling values-->
+                        <option value="asc" selected>Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                    <hr class="w-50 mx-auto my-3">
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="bookGrid"></div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script> <!-- added this to experiment w simple pulse effect for the brand text in hero section cuz we brought it up in class ages ago but never used it -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/javascript.js"></script>
+</body>
+
+</html>
